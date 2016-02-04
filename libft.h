@@ -6,7 +6,7 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 12:22:00 by aperraul          #+#    #+#             */
-/*   Updated: 2016/02/04 15:07:32 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/02/04 15:17:01 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,12 @@ typedef	struct	s_list
 	size_t			content_size;
 	struct s_list	*next;
 }				t_list;
+
+typedef	struct	s_pt
+{
+	int			x;
+	int			y;
+}				t_pt;
 
 void			ft_bzero(void *s, size_t n);
 void			*ft_memset(void *s, int c, size_t n);
