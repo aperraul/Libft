@@ -6,13 +6,13 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/14 15:18:03 by aperraul          #+#    #+#             */
-/*   Updated: 2016/02/14 15:32:56 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/02/22 14:58:37 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_pt	**ft_alloc_tab_pt(t_pt size)
+t_pt	**ft_alloc_pt(t_pt size)
 {
 	t_pt	**tab;
 	int		i;
@@ -23,7 +23,7 @@ t_pt	**ft_alloc_tab_pt(t_pt size)
 	return (tab);
 }
 
-t_pt	**ft_free_tab_pt(t_pt **tab)
+t_pt	**ft_free_pt(t_pt **tab)
 {
 	int		i;
 
