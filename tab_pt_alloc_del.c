@@ -6,7 +6,7 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/14 15:18:03 by aperraul          #+#    #+#             */
-/*   Updated: 2016/02/22 14:58:37 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/02/25 11:32:18 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ t_pt	**ft_alloc_pt(t_pt size)
 {
 	t_pt	**tab;
 	int		i;
+
 	i = -1;
 	tab = (t_pt **)ft_memalloc(sizeof(t_pt *) * (size.x + 1));
 	while (++i < size.y)
