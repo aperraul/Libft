@@ -6,14 +6,22 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 12:22:00 by aperraul          #+#    #+#             */
-/*   Updated: 2016/02/22 14:58:58 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/06/13 16:07:29 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <unistd.h>
+# include <stdlib.h>
 # include <string.h>
+
+typedef	struct	s_lstline
+{
+	struct s_lstline	*next;
+	char				*line;
+}				t_lstline;
 
 typedef	struct	s_list
 {
@@ -87,7 +95,8 @@ void			ft_lstdel(t_list **alst, void (del)(void *, size_t));
 void			ft_lstadd(t_list **alst, t_list *new);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-t_pt			**ft_alloc_pt(t_pt size);
-t_pt			**ft_free_pt(t_pt **tab);
+t_lstline		*ft_add_list(t_lstline *begin, char *line);
+t_lstline		*ft_next_list(void);
+void			ft_lstline_del(t_lstline *alst);
 
 #endif
