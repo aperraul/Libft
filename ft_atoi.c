@@ -6,7 +6,7 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 19:21:31 by aperraul          #+#    #+#             */
-/*   Updated: 2015/11/29 15:17:12 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/06/15 11:45:26 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,30 @@ int		ft_atoi(const char *str)
 		i++;
 	}
 	return (result * negative);
+}
+
+double		ft_atoid(const char *str)
+{
+	double	result;
+	int		i;
+	char	*a;
+	char	*b;
+	int		k;
+
+	i = -1;
+	k = 0;
+	result = 0;
+	while (str[++i] != '.')
+		a[i] = str[i];
+	result += ft_atoi(a);
+	i++;
+	while ((str[i] >= '0') && (str[i] <= '9'))
+	{
+		b[k] = str[i];
+		k++;
+		i++;
+	}
+	k = ft_strlen(b) -1;
+	result += (ft_atoi(b) / (10 * k));
+	return (result);
 }
