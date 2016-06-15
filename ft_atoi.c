@@ -6,7 +6,7 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 19:21:31 by aperraul          #+#    #+#             */
-/*   Updated: 2016/06/15 14:28:58 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/06/15 15:54:31 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,9 @@ double		ft_atoid(char *str)
 			return (ft_atoi(str));
 	}
 	result = ft_atoi(str);
-	result += (double)ft_atoi(a) / (double)ft_power(10, ft_strlen(a));
+	if (result < 0)
+		result -= (double)ft_atoi(a) / (double)ft_power(10, ft_strlen(a));
+	else
+		result += (double)ft_atoi(a) / (double)ft_power(10, ft_strlen(a));
 	return (result);
 }
