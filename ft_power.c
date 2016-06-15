@@ -6,7 +6,7 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/15 13:54:28 by aperraul          #+#    #+#             */
-/*   Updated: 2016/06/15 14:00:09 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/06/15 14:18:58 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int		ft_power(int nb, int pow)
 	int x;
 
 	x = nb;
-	while (pow > 0)
+	while (pow > 1)
 	{
 		nb *= x;
 		pow--;

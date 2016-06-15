@@ -6,13 +6,13 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 19:21:31 by aperraul          #+#    #+#             */
-/*   Updated: 2016/06/15 14:04:06 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/06/15 14:28:58 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+int			ft_atoi(const char *str)
 {
 	int		result;
 	int		i;
@@ -50,9 +50,16 @@ double		ft_atoid(char *str)
 	a = NULL;
 	result = 0;
 	while (str[++i] != '.')
-		;
-	a = &str[++i];
+		if (str[i] == '\0')
+			return (ft_atoi(str));
+	a = &str[i + 1];
+	i = -1;
+	while (a[++i])
+	{
+		if (!ft_isdigit(a[i]))
+			return (ft_atoi(str));
+	}
 	result = ft_atoi(str);
-	result += ft_atoi(a) / ft_power(10, ft_strlen(a - 1));
+	result += (double)ft_atoi(a) / (double)ft_power(10, ft_strlen(a));
 	return (result);
 }
