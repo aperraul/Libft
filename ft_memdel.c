@@ -6,7 +6,7 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 18:47:48 by aperraul          #+#    #+#             */
-/*   Updated: 2016/06/17 10:44:58 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/06/17 10:49:58 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ void	ft_memdel2(void ***ap)
 	if (ap != NULL)
 	{
 		i = -1;
-		while ((*ap)[i])
-			free(*ap[i]);
+		while ((*ap)[++i])
+			ft_memdel((void **)&ap[i]);
 		free(**ap);
 		ap = NULL;
 	}
