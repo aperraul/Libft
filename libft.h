@@ -6,7 +6,7 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 12:22:00 by aperraul          #+#    #+#             */
-/*   Updated: 2016/06/19 15:49:12 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/06/20 13:50:16 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,8 @@ typedef	struct	s_pt
 }				t_pt;
 
 void			ft_bzero(void *s, size_t n);
+int				ft_abs(int a);
+double			ft_absd(double a);
 void			*ft_memset(void *s, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 void			*ft_memcpy(void *dest, const void *src, size_t n);
