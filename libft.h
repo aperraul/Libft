@@ -6,7 +6,7 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 12:22:00 by aperraul          #+#    #+#             */
-/*   Updated: 2016/06/20 13:50:16 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/06/23 15:11:03 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ char			*ft_strnstr(const char *s1, const char *s2, size_t n);
 char			*ft_strrchr(const char *s, int c);
 char			*ft_strstr(const char *s1, const char *s2);
 int				ft_atoi(const char *str);
+int				ft_atoi_base(const char *str, int base);
 double			ft_atoid(char *str);
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);

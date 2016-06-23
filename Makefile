@@ -6,13 +6,14 @@
 #    By: aperraul <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/29 12:38:27 by aperraul          #+#    #+#              #
-#    Updated: 2016/06/20 13:50:48 by aperraul         ###   ########.fr        #
+#    Updated: 2016/06/23 15:10:38 by aperraul         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
 SRCS = ft_atoi.c \
+	   ft_atoi_base.c \
 	   ft_abs.c \
 	   ft_bzero.c \
 	   ft_isalnum.c \
@@ -77,6 +78,7 @@ SRCS = ft_atoi.c \
 	   list.c
 
 OBJECTS = ft_atoi.o \
+		  ft_atoi_base.o \
 		  ft_abs.o \
 		  ft_bzero.o \
 		  ft_isalnum.o \
