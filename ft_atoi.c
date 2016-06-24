@@ -6,13 +6,13 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 19:21:31 by aperraul          #+#    #+#             */
-/*   Updated: 2016/06/23 14:51:06 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/06/24 10:55:58 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+int			ft_atoi(const char *str)
 {
 	int		result;
 	int		i;
@@ -40,7 +40,17 @@ int		ft_atoi(const char *str)
 	return (negative == -1 ? -result : result);
 }
 
-double	ft_atoid(char *str)
+static int	ft_strdigitlen(char *a)
+{
+	int		i;
+
+	i = 0;
+	while (ft_isdigit(a[i]))
+		i++;
+	return (i);
+}
+
+double		ft_atoid(char *str)
 {
 	double	result;
 	int		i;
@@ -61,8 +71,8 @@ double	ft_atoid(char *str)
 	}
 	result = ft_atoi(str);
 	if (result < 0)
-		result -= (double)ft_atoi(a) / (double)ft_power(10, ft_strlen(a));
+		result -= (double)ft_atoi(a) / (double)ft_power(10, ft_strdigitlen(a));
 	else
-		result += (double)ft_atoi(a) / (double)ft_power(10, ft_strlen(a));
+		result += (double)ft_atoi(a) / (double)ft_power(10, ft_strdigitlen(a));
 	return (result);
 }

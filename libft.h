@@ -6,7 +6,7 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 12:22:00 by aperraul          #+#    #+#             */
-/*   Updated: 2016/06/23 15:11:03 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/06/24 14:12:44 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,9 +63,11 @@ int				ft_atoi_base(const char *str, int base);
 double			ft_atoid(char *str);
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
+int				ft_isdouble(char *str);
 int				ft_isascii(int c);
 int				ft_isdigit(int c);
 int				ft_isprint(int c);
+int				ft_isescseq(int c);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
 void			*ft_memccpy(void *dst, const void *src, int c, size_t n);
