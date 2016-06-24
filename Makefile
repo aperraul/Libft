@@ -6,7 +6,7 @@
 #    By: aperraul <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/29 12:38:27 by aperraul          #+#    #+#              #
-#    Updated: 2016/06/23 15:10:38 by aperraul         ###   ########.fr        #
+#    Updated: 2016/06/24 16:59:21 by aperraul         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,10 @@ SRCS = ft_atoi.c \
 	   ft_isalnum.c \
 	   ft_isalpha.c \
 	   ft_isascii.c \
+	   ft_isescseq.c \
+	   ft_isdouble.c \
+	   ft_ishexa.c \
+	   ft_strishexa.c \
 	   ft_isdigit.c \
 	   ft_isprint.c \
 	   ft_itoa.c \
@@ -83,6 +87,10 @@ OBJECTS = ft_atoi.o \
 		  ft_bzero.o \
 		  ft_isalnum.o \
 		  ft_isalpha.o \
+		  ft_isdouble.o \
+		  ft_isescseq.o \
+		  ft_ishexa.o \
+		  ft_strishexa.o \
 		  ft_isascii.o \
 		  ft_isdigit.o \
 		  ft_isprint.o \

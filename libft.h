@@ -6,7 +6,7 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 12:22:00 by aperraul          #+#    #+#             */
-/*   Updated: 2016/06/24 14:12:44 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/06/24 16:29:47 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,8 @@ double			ft_atoid(char *str);
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
 int				ft_isdouble(char *str);
+int				ft_ishexa(int c);
+int				ft_strishexa(char *str);
 int				ft_isascii(int c);
 int				ft_isdigit(int c);
 int				ft_isprint(int c);
