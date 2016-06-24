@@ -6,7 +6,7 @@
 /*   By: aperraul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/24 14:18:59 by aperraul          #+#    #+#             */
-/*   Updated: 2016/06/24 14:56:57 by aperraul         ###   ########.fr       */
+/*   Updated: 2016/06/24 17:20:15 by aperraul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_ishexa(int c)
 {
-	if (ft_isdigit(c) || (c >= 'A' && c <= 'F') || c >= ('a' && c <= 'f'))
+	if (ft_isdigit(c) || (c >= 'A' && c <= 'F') || (c >= 'a' && c <= 'f'))
 		return (1);
 	else
 		return (0);
